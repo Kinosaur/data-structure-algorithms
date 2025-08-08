@@ -1,0 +1,48 @@
+*Problem A 
+
+Running Time Analysis:
+
+The selection sort's time complexity comes from:
+
+Finding the maximum element: O(n) for each iteration
+Performing n iterations
+
+
+Therefore, the time complexity is: T(n) = O(n²)
+
+
+Heapsort Implementation:
+
+The modified algorithm uses a max-heap to efficiently extract the maximum element
+Each heap operation (insert, extract) takes O(log n)
+We perform these operations n times
+
+
+Heapsort Time Complexity:
+
+Heap operations (insert and extract) take O(log n)
+We perform these n times
+Therefore, the time complexity is: T(n) = O(n log n)
+
+*Problem B
+
+The solution uses a min-heap to always connect the two shortest ropes:
+
+Start with a min-heap of rope lengths
+Extract the two shortest ropes
+Connect them, adding their length to the total cost
+Insert the connected rope back into the heap
+Repeat until only one rope remains
+
+Key points about the implementation:
+
+- Uses the default min-heap behavior of the provided heap class
+- Time complexity: O(n log n) due to heap operations
+
+Both implementations leverage the heap data structure to improve time complexity compared to naive approaches.
+
+#Complexity Comparisons
+
+Selection Sort: O(n²)
+Heapsort: O(n log n)
+Rope Connection: O(n log n)

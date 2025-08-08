@@ -1,0 +1,9 @@
+### Answer 3: What is the table size you use for the provided test case? Why?
+
+- Table Size: 10
+- Justification:
+  1. Load Factor: With 10 keys and a table size of 10, the load factor is 10/10 = 1.0, which ensures efficient distribution and minimizes collisions.
+  2. Collision Management: The size provides enough buckets to handle collisions effectively with separate chaining.
+  3. Balanced Performance: Larger sizes would waste memory, and smaller sizes (e.g., 9) would increase collisions and degrade performance. 
+
+Thus, a table size of 10 is optimal for balancing efficiency and memory usage in this test case.
